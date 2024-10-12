@@ -1,11 +1,66 @@
-h1{
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #B7B6C1;
+body, html {
+    margin: 0;
+    padding: 0;
 }
-.underline-text{
-    text-decoration: underline;
-    text-decoration-color: #6a6b5b;
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    border-color: #ffd700;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
 }
 
 header{
@@ -30,9 +85,146 @@ header{
     
 }
 
-.social-icon{
-    display: inline-block;
-    box-sizing: border-box;
+h1{
+    text-align: center;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6fa9eb;
+}
+.underline-text{
+    text-decoration: underline;
+    text-decoration-color: #6a6b5b;
+}
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+.form-group {
+    margin-bottom: 20px;
+  }
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+input[type="text"],
+input[type="email"],
+
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+textarea {
+    resize: vertical;
+  }
+  
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+button:hover {
+    background-color: #45a049;
+  }
+  
+  /* 响应式设计 */
+@media (max-width: 600px) {
+    form {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* 图标之间的间距 */
+  }
+  
+  .social-icon {
     width: 50px;
     height: 50px;
+    border-radius: 50%; /* 使图标容器变成圆形 */
+    overflow: hidden;   /* 确保图片不会超出圆形边界 */
+    background-color: #f0f0f0; /* 添加背景色 */
+  }
+  
+  .social-icon img {
+    width: 60%;  /* 图标略小于容器 */
+    height: 60%;
+    object-fit: contain;
+    display: block;
+    margin: 20% auto; /* 居中图标 */
+  }
+
+  
+  .social-icon:hover img {
+    fill: #007bff; /* 悬停时改变颜色 */
+  }
+
+  #WorkExperience {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+#WorkExperience h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.job {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.job h3 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.job .company {
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.job .duration {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.job ul {
+    padding-left: 20px;
+}
+
+.job li {
+    margin-bottom: 8px;
+    line-height: 1.4;
 }

@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>Welcome to SF</header>
+    <nav>
+        <ul> 
+            <li><a href="NavPage.html">Home</a></li>
+            <li><a href="WorkExperience.html">Experience</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>Taylor Zhu</header>
     <h1>Contact Info</h1>
     <form action="/form-handling-url" method="post">
         <!-- <fieldset>用于对表单中的元素进行分组， <legend>元素用于为该元素分组提供标题或标题 -->
         <fieldset>
             <legend>Add Info</legend>
-            
+            <!-- label 的 for match 的是 input 的 id -->
             <div>
                 <label for="firstName">First name</label>
                 <!-- types属性告诉浏览器它期望什么类型的输入 -->
@@ -41,8 +50,8 @@
             </div>
 
             <div>
-                <label for="expiration">Expiration</label>
-                <input type="date" id="expiration" name="expiration">
+                <label for="dob">DoB</label>
+                <input type="date" id="dob" name="dob">
             </div>
 
             <!-- 多行文本输入 -->
@@ -53,16 +62,17 @@
 
             <!-- 默认情况下，如果按钮位于表单内部，即位于<form>和</form>标记之间，则它是一个提交按钮。这意味着表单将把每个表单字段的内容发送到服务器进行处理。 -->
             <div>
-                <button type="submit">Submit Info</button>
+                <button type="submit">Submit</button>
             </div>
         </fieldset>
     </form>
+    
+    <div class="social-icons-container">
+        <div class="social-icon"><a href="https://github.com/htzhu"><img src="github-icon.jpg" alt="github"></a></div>
+        <div class="social-icon"><a href=""><img src="path/to/linkedin-icon.png" alt="linkedin"></a></div>
+        <div class="social-icon"><a href=""><img src="path/to/x-icon.png" alt="x"></a></div>
+        <div class="social-icon"><a href=""><img src="path/to/instagram-icon.png" alt="instagram"></a></div>
+      </div>
 
-    <div class="social-icon">
-        <div class="social-icon"><a href="https://github.com/htzhu"><img alt="github"></a></div>
-        <div class="social-icon"><a href=""><img alt="linkedin"></a></div>
-        <div class="social-icon"><a href=""><img alt="x"></a></div>
-        <div class="social-icon"><a href=""><img alt="instagram"></a></div>
-    </div>
 </body>
 </html>
