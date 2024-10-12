@@ -7,11 +7,62 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <div class=""><a href="https://github.com/htzhu"><img alt="github"></a></div>
-        <div class=""><a href=""><img alt="linkedin"></a></div>
-        <div class=""><a href=""><img alt="x"></a></div>
-        <div class=""><a href=""><img alt="instagram"></a></div>
+    <header>Welcome to SF</header>
+    <h1>Contact Info</h1>
+    <form action="/form-handling-url" method="post">
+        <!-- <fieldset>用于对表单中的元素进行分组， <legend>元素用于为该元素分组提供标题或标题 -->
+        <fieldset>
+            <legend>Add Info</legend>
+            
+            <div>
+                <label for="firstName">First name</label>
+                <!-- types属性告诉浏览器它期望什么类型的输入 -->
+                <input type="text" id="firstName" name="first_name">
+            </div>
+
+            <div>
+                <label for="lastName">Last name</label>
+                <input type="text" id="lastName" name="last_name">
+            </div>
+
+            <!-- Email类型会检查是否输入匹配email格式 -->
+            <div>
+                <label for="Email">Email</label>
+                <input type="text" id="email" name="email_address">
+            </div>
+
+            <div>
+                <label for="lastName">Role</label>
+                <select id="role" name="user_role_name">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="expiration">Expiration</label>
+                <input type="date" id="expiration" name="expiration">
+            </div>
+
+            <!-- 多行文本输入 -->
+            <div>
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+
+            <!-- 默认情况下，如果按钮位于表单内部，即位于<form>和</form>标记之间，则它是一个提交按钮。这意味着表单将把每个表单字段的内容发送到服务器进行处理。 -->
+            <div>
+                <button type="submit">Submit Info</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="social-icon">
+        <div class="social-icon"><a href="https://github.com/htzhu"><img alt="github"></a></div>
+        <div class="social-icon"><a href=""><img alt="linkedin"></a></div>
+        <div class="social-icon"><a href=""><img alt="x"></a></div>
+        <div class="social-icon"><a href=""><img alt="instagram"></a></div>
     </div>
 </body>
 </html>
