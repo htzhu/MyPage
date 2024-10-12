@@ -75,7 +75,7 @@ header{
         justify-content: center;
         align-items: center;
         font-size: clamp(40px, 10vw, 150px); /* 响应式字体大小 */
-        background-image: url('golden-gate-bridge-header.jpg');
+        background-image: url('img/bg/golden-gate-bridge-header.jpg');
         background-size: 100% auto; /* 确保背景图片始终覆盖整个区域 */
         background-position: center;
         /* background-repeat: no-repeat; 防止背景图片重复 */
