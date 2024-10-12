@@ -16,5 +16,56 @@
         </ul>
     </nav>
     <header>Taylor Zhu</header>
+
+    <section id="WorkExperience">
+        <h2>Projects</h2>
+        <div class="job">
+            <h3><a href="experience/huawei.html">GPT-4o vs Gemini Hackthon</a></h3>
+            <p class="company">Solaris Inc.</p>
+            <p class="duration">June/5 2024 - June/6 2024</p>
+            <ul>
+                <li>Developed and maintained web applications using React and Node.js</li>
+                <li>Implemented RESTful APIs for backend services</li>
+                <li>Collaborated with cross-functional teams to deliver high-quality software products</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3> <a href="experience/huawei.html">Junior Developer</a></h3>
+            <p class="company">StartUp Solutions</p>
+            <p class="duration">June 2018 - December 2019</p>
+            <ul>
+                <li>Assisted in the development of mobile applications using React Native</li>
+                <li>Participated in code reviews and improved code quality</li>
+                <li>Contributed to the design and implementation of database schemas</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Projects">
+        <h2>Projects & Work Experience</h2>
+        <div class="project-grid">
+          <div class="project-card" onclick="location.href='/project1'">
+            <h3>Project 1: AI-Driven Web App</h3>
+            <p>Built with React, Node.js, and TensorFlow.js</p>
+            <div class="tech-stack">
+              <img src="react-icon.png" alt="React">
+              <img src="nodejs-icon.png" alt="Node.js">
+              <img src="tensorflow-icon.png" alt="TensorFlow.js">
+            </div>
+          </div>
+          <!-- More project cards -->
+        </div>
+      </section>
+    <script>
+        // 添加一些动画效果
+        document.querySelectorAll('.project-card').forEach(card => {
+          card.addEventListener('mouseenter', () => {
+            card.style.transform = 'scale(1.05)';
+          });
+          card.addEventListener('mouseleave', () => {
+            card.style.transform = 'scale(1)';
+          });
+        });
+      </script>
 </body>
 </html>

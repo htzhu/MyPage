@@ -86,16 +86,13 @@ header{
 }
 
 h1{
-    text-align: center;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-    color: #6fa9eb;
 }
 .underline-text{
     text-decoration: underline;
     text-decoration-color: #6a6b5b;
 }
-
 
 form {
     max-width: 500px;
@@ -227,4 +224,29 @@ button:hover {
 .job li {
     margin-bottom: 8px;
     line-height: 1.4;
+}
+
+/* Homepage */
+.content-container {
+    max-width: 600px; /* 调整这个值来控制内容的最大宽度 */
+    margin: 0 auto; /* 使容器居中 */
+    padding: 0 20px; /* 在容器两侧添加一些内边距 */
+    box-sizing: border-box; /* 确保padding不会增加总宽度 */
+}
+
+.content-container p {
+    text-align: justify; /* 使文本两端对齐，可选 */
+    line-height: 1.6; /* 提高文本可读性 */
+    margin-bottom: 20px; /* 在段落下方添加一些空间 */
+}
+
+.content-container img {
+    display: block; /* 使图片成为块级元素 */
+    max-width: 100%; /* 确保图片不会超过容器宽度 */
+    height: auto; /* 保持图片比例 */
+    margin: 20px auto; /* 在图片上下添加空间并居中 */
+}
+
+.center_h1{
+    text-align: center;
 }
